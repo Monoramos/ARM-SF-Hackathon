@@ -8,4 +8,10 @@
     "cortex-debug.variableUseNaturalFormat": false,
     "debug.hideSlowPreLaunchWarning": true,
     "debug.showInStatusBar": "never",
+
+    "alif.setools.root": "/Users/ramonramos/Downloads/app-release-exec-macos",
+    "cortex-debug.JLinkGDBServerPath": "/Applications/SEGGER/JLink/JLinkGDBServerCLExe",
+    "clangd.arguments": [
+        "--compile-commands-dir=/Users/ramonramos/alif_vscode-template/out/blinky/DevKit-E8-HE/debug"
+    ]
 }

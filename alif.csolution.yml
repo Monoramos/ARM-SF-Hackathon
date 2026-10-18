@@ -63,6 +63,10 @@ solution:
         - BoardLayer: $SolutionDir()$/board/devkit-e8/board.clayer.yml
       target-set:
         - set:
+          debugger:
+            name: J-Link Server
+            clock: 4000000
+            protocol: jtag
           images:
             - project-context: blinky.debug
 

@@ -43,11 +43,8 @@ int main (void)
     gpio_r->SetDirection(BOARD_LEDRGB_R_GPIO_PIN, GPIO_PIN_DIRECTION_OUTPUT);
     gpio_r->SetValue(BOARD_LEDRGB_R_GPIO_PIN, GPIO_PIN_OUTPUT_STATE_LOW);
 
-#if defined(RTSS_HE)
-    SysTick_Config(SystemCoreClock/10);
-#else
-    SysTick_Config(SystemCoreClock/25);
-#endif
+    /* SysTick disabled: no timer, so no blinking */
+        gpio_b->SetValue(BOARD_LEDRGB_B_GPIO_PIN, GPIO_PIN_OUTPUT_STATE_LOW);
 
     while (1) __WFI();
 }
